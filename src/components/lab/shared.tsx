@@ -106,7 +106,7 @@ export function Consent({ checked, onChange }: { checked: boolean; onChange: (v:
   );
 }
 
-export function Stat({ label, value, tone }: { label: string; value: ReactNode; tone?: "good" | "bad" }) {
+export function Stat({ label, value, tone }: { label: string; value: ReactNode; tone?: "good" | "bad" | undefined }) {
   return (
     <div className="rounded-xl bg-muted/50 p-4">
       <p className="text-xs uppercase tracking-wider text-muted-foreground">{label}</p>

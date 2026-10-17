@@ -3,7 +3,7 @@ export function toGray(img: ImageData): Float32Array {
   const g = new Float32Array(img.width * img.height);
   for (let i = 0; i < g.length; i++) {
     const d = img.data;
-    g[i] = 0.299 * d[i * 4] + 0.587 * d[i * 4 + 1] + 0.114 * d[i * 4 + 2];
+    g[i] = 0.299 * d[i * 4]! + 0.587 * d[i * 4 + 1]! + 0.114 * d[i * 4 + 2]!;
   }
   return g;
 }
@@ -14,11 +14,11 @@ export function matchTemplate(
 ): { x: number; y: number; score: number } {
   const n = tw * th;
   let tMean = 0;
-  for (let i = 0; i < n; i++) tMean += tpl[i];
+  for (let i = 0; i < n; i++) tMean += tpl[i]!;
   tMean /= n;
   const tz = new Float32Array(n);
   let tNorm = 0;
-  for (let i = 0; i < n; i++) { tz[i] = tpl[i] - tMean; tNorm += tz[i] * tz[i]; }
+  for (let i = 0; i < n; i++) { const z = tpl[i]! - tMean; tz[i] = z; tNorm += z * z; }
   tNorm = Math.sqrt(tNorm);
   let best = { x: 0, y: 0, score: -Infinity };
   for (let y = 0; y <= sh - th; y++) {
@@ -27,8 +27,8 @@ export function matchTemplate(
       for (let j = 0; j < th; j++) {
         const row = (y + j) * sw + x, trow = j * tw;
         for (let i = 0; i < tw; i++) {
-          const v = src[row + i];
-          sum += v; sum2 += v * v; cross += v * tz[trow + i];
+          const v = src[row + i]!;
+          sum += v; sum2 += v * v; cross += v * tz[trow + i]!;
         }
       }
       const varS = sum2 - (sum * sum) / n;

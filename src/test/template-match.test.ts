@@ -7,7 +7,7 @@ describe("template matching", () => {
     const src = new Float32Array(w * h).map((_, i) => (i * 37) % 251);
     const tw = 4, th = 3, tx = 9, ty = 6;
     const tpl = new Float32Array(tw * th);
-    for (let j = 0; j < th; j++) for (let i = 0; i < tw; i++) tpl[j * tw + i] = src[(ty + j) * w + tx + i];
+    for (let j = 0; j < th; j++) for (let i = 0; i < tw; i++) tpl[j * tw + i] = src[(ty + j) * w + tx + i]!;
     const r = matchTemplate(src, w, h, tpl, tw, th);
     expect(r.x).toBe(tx);
     expect(r.y).toBe(ty);
