@@ -5,7 +5,7 @@ verification right in the browser, and see the maths behind each result.
 
 ## 🚀 Live Demo
 
-VISIONLAB — Live Website
+VISIONLAB — Live Websitehttps://lovable.dev/projects/52ad0a3a-8458-467a-b88f-7006c43d63e9
 
 > Open the link, pick a demo from the top bar and click a sample photo — no install needed.
 > Template Matching runs completely in the browser. The face demos (Viola–Jones, DeepFace,
