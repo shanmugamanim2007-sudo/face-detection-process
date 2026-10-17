@@ -5,14 +5,14 @@ verification right in the browser, and see the maths behind each result.
 
 ## 🚀 Live Demo
 
-**https://id-preview--52ad0a3a-8458-467a-b88f-7006c43d63e9**
+VISIONLAB — Live Website
 
 > Open the link, pick a demo from the top bar and click a sample photo — no install needed.
 > Template Matching runs completely in the browser. The face demos (Viola–Jones, DeepFace,
 > FaceNet) need the Python backend running locally — see below.
 
 Once the app is published from the Publish button, the same demo is served from a permanent
-public address: **https://face-detection-processing.lovable.app**
+public address: **https://face-detection-processing.**
 
 | Demo | Route | Runs |
 |---|---|---|
