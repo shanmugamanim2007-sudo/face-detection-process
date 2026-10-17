@@ -5,7 +5,7 @@ verification right in the browser, and see the maths behind each result.
 
 ## 🚀 Live Demo
 
-**https://id-preview--52ad0a3a-8458-467a-b88f-7006c43d63e9.lovable.app**
+**https://id-preview--52ad0a3a-8458-467a-b88f-7006c43d63e9**
 
 > Open the link, pick a demo from the top bar and click a sample photo — no install needed.
 > Template Matching runs completely in the browser. The face demos (Viola–Jones, DeepFace,
@@ -97,4 +97,3 @@ facenet-pytorch
 
 ---
 
-Made with [Lovable](https://lovable.dev).
